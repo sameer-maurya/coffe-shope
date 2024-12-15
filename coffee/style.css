@@ -1,0 +1,629 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+nav{
+    background-color: #754328;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+}
+
+label.logo{
+    font-style: italic;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    background: linear-gradient(to left, yellow, orange, rgb(201, 2, 2), blue);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    text-align: right;
+}
+#check{
+    display: none;
+}
+.sam{
+    list-style: none;
+    padding-left: 30%;
+    overflow: hidden;
+}
+.sam,a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: wheat;
+}
+big{
+    font-style: italic;
+    font-weight: bolder;
+    color: wheat;
+}
+a:hover{
+    color: rgb(84, 214, 52);
+}
+.fa-solid{
+    color: white;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: #754328;
+    display: flex;
+}
+.contaner{
+    height: 100vh;
+    width: 50%;
+    background-color: #754328;
+    text-align: center;
+}
+.main-para{
+    font-size: 10vh;
+    padding-top: 30vh;
+    font-family: "Caveat", cursive;
+    margin-left: 30px;
+    background: linear-gradient(to left, yellow, orange, rgb(201, 2, 2), rgb(0, 238, 255));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.para2{
+    font-size: larger;
+    font-style: italic;
+    font-size: 30px;
+    padding-left: 50px;
+    color: pink;
+}
+.para3{
+    font-size: 20px;
+    padding: 50px;
+    color: pink;
+}
+.para4{
+    font-size: 30px;
+    padding-left: 50px;
+    color: pink;
+}
+.photo{
+    height: 500px;
+    width: 500px;
+    background-image: url("cup.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    animation: cup 1s ease-in 0s 1 normal;
+    position: relative;
+}
+@keyframes cup{
+    0%{
+        left: 150px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+.photo-div{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    background-color: #754328;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    font-size: 18px;
+    border: none;
+    background-color: #754328;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgb(26, 131, 26);
+}
+.btn:hover{
+    background-color: #c5a4a4;
+    cursor: pointer;
+}
+.about-coffee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+}
+.text {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    font-size: 20px;
+    color: hsl(288, 67%, 34%);
+    font-family: Arial, Helvetica, sans-serif;    
+}
+.left-text {
+    text-align: justify;
+}
+.right-text {
+    text-align: justify;
+}
+.pro-pic img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    animation: coffee_cup 2s ease-in 0s infinite alternate;
+    position: relative;
+}
+@keyframes coffee_cup{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 10px;
+    }
+    
+}
+/* menu section */
+
+.menu_section1{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(to left bottom,rgb(236, 164, 8),blue,skyblue);
+    background-color: yello;
+    display: flex;
+    color: aquamarine;
+    animation: color2 5s ease-in 0s infinite alternate-reverse;
+}
+@keyframes color2{
+    from{
+        background-image: linear-gradient(to left bottom,rgb(236, 164, 8),rgb(46, 46, 109),skyblue);
+    }
+    to{
+        background-image: linear-gradient(to left bottom,rgb(34, 34, 119),rgb(236, 164, 8));
+
+    }
+}
+
+.leftdivimg{
+    height: 50vh;
+    width: 30%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftimg{
+    height: 200px;
+    width: 200px;
+    background-image: url(image.png);
+    background-size: cover;
+}
+.rightpara{
+    height: 50vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_paragraph{
+    line-height: 50px;
+    font-size: 20px;
+}
+.menu_section2{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(to left,pink,yellow,pink);
+    display: flex;
+    color: darkgreen;
+    animation: color5 5s ease-in 0s infinite alternate;
+}
+@keyframes color5{
+    from{
+        background-image: linear-gradient(to left,pink,yellow,pink);
+    }
+    to{
+        background-image: linear-gradient(to left bottom, orange,pink);
+    }
+}
+.leftparagraf{
+    height: 50vh;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.left_para{
+    height: 50vh;
+    width: 70%;
+}
+.hello{
+    height: 50vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_img{
+    height: 200px;
+    width: 200px;
+    background-image: url("cup.jpg");
+    background-size: cover;
+}
+
+/* footer */
+
+.footer-div{
+    height: 300px;
+    width: 50%;
+    background-color: orangered;
+}
+.main-footer{
+    height: 400px;
+    width: 100%;
+    background-color: pink;
+}
+h1{
+    text-align: center;
+}
+.icon{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.icon:i{
+    margin: 20px;
+    cursor: pointer;
+}
+icon,i:hover{
+    color: #c5a4a4;
+    font-size: 35px;
+}
+.pic{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(241, 10, 10);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 42%;
+    margin-top: 10px;
+}
+.main-profili{
+    text-align: center;
+}
+span{
+    border-bottom: 2px solid black;
+}
+#option1{
+    border: none;
+    border-bottom: 2px solid black;
+}
+#option2{
+    border: none;
+    border-bottom: 2px solid black;
+}
+.content-section{
+    padding: 40px 0 100px;
+    background-color: rgb(29, 26, 26);
+    color: wheat;
+}
+.content-section .section-contant{
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px;
+}
+.content-section .contant-info-list .contant-info{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+    align-items: center;
+    color: white;
+}
+.content-section .contact-form .form-input{
+    width: 90%;
+    height: 50px;
+    border:  1px solid black;
+    padding: 0 12px;
+    outline: none;
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+.content-section .contact-form textarea{
+    height: 100px;
+    padding: 12px;
+    resize: vertical;
+}
+.contact-form .btn1{
+    font-size: 20px;
+    border-radius: 5px;
+    color: rgb(177, 28, 65);
+    font-weight: 800;
+    cursor: pointer;
+}
+.name{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding-left: 40px;
+    font-style: italic;
+    position: relative;
+    top: 40px;
+    
+}
+h4{
+    color: rgb(116, 62, 62);
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    background-image: linear-gradient(to right,skyblue,pink);
+
+
+}
+@media only screen and (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .nav ul li a{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        backdrop-filter: blur(5px);
+        box-shadow: 5px 10px 8px #888888;
+    }
+    nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 40px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: black;
+
+    }
+    a:hover{
+        background: none;
+        color: pink;
+        background-color: #c5a4a4; 
+        font-size: 30px;       
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+} 
+@media only screen and (max-width: 600px) {   
+    .photo{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        display: flex;
+    }
+    .photo-div{
+        margin-left: 25%;
+    }
+
+    .contaner{
+        width: 100%;
+    }
+    .main-para{
+        font-size: 40px;
+    }    
+    .main{
+        flex-direction: column;
+    }
+    .para3{
+        display: none;
+    }
+    .pro-pic{
+        display: none;
+    }
+    .about-coffee{
+        flex-direction: column;
+        height: 80vh;
+    }
+    .text{
+        font-size: 14px;
+    }
+    /* menu section in 600px */
+    .menu_section1{
+        flex-direction: column;
+        height: 70vh;
+    }
+    .leftdivimg{
+        width: 100%;
+    }
+    .rightpara{
+        width: 100%;
+        
+    }
+    .leftimg{
+        height: 150px;
+        width: 150px;
+        border-radius: 10%;
+    }
+    .right_paragraph{
+        padding: 10px;
+        height: 150px;
+        font-size: 16px;
+        color: yellow;
+        line-height: 20px;
+    }
+
+    .menu_section2{
+        flex-direction: column-reverse;
+        height: 70vh;
+    }
+    .left_para{
+        width: 100%;
+        color: blu;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .leftparagraf{
+        width: 90%;
+        line-height: 20px;
+        font-size: 16px;
+        height: 150px;
+    }
+    .hello{
+        width: 100%;
+    }
+    .btn{
+        margin: 20px;
+    }
+    .right_img{
+        height: 150px;
+        width: 150px;
+        border-radius: 10%;
+    }
+    .content-section .contant-info-list .contant-info{
+        visibility: visible;
+    }
+    .section-contant{
+        flex-direction: column-reverse;
+    }
+}
+@media(min-width:601px) and (max-width:768px){
+    .photo{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+    .main-para{
+        font-size: 5vh;
+    }
+    .text{
+        font-size: 15px;
+        
+    }
+    .pro-pic{
+        display: none;
+    }
+    .pro-line{
+        height: 400px;
+        width: 100%;
+        font-size: 20px;
+        
+    }
+    .about-coffee{
+        flex-direction: column;
+    }
+    .leftdivimg{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .right_paragraph{
+        line-height: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 8px;
+        padding-right: 8px;
+        text-align: justify;
+    }
+    
+    .leftparagraf{
+        width: 100%;
+        line-height: normal;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 8px;
+        /* text-align: justify; */
+    }
+    /* ul{
+        padding-left: 10%;
+    } */
+}
+@media(min-width:769px) and (max-width:992px){
+    .main-para{
+        font-size: 8vh;
+    }
+    .para4{
+        font-size: 20px;
+    }
+    .photo{
+        height: 400px;
+        width: 400px;
+    }
+    .pro-pic{
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .pro-line{
+        width: 100%;
+    }
+    .left_img{
+        border: none;
+    }
+    .right_img{
+        border: none;
+    }
+    .leftparagraf{
+        line-height: 40px;
+    }
+
+}
+@media(min-width:993px) and (max-width:1200px){
+    p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .pro-pic{
+        height: 200px;
+        width: 200px;
+    }
+    .pro-line{
+        width: 100%;
+    }
+
+}
